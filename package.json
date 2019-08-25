@@ -1,0 +1,19 @@
+{
+  "name": "unpkg-fs",
+  "version": "0.1.0",
+  "description": "A simple virtual filesystem built on the top of Unpkg.",
+  "main": "dist/index.js",
+  "private": true,
+  "repository": "https://github.com/Minigugus/unpkg-fs",
+  "author": "Minigugus <https://github.com/Minigugus>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^1.20.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.23.0",
+    "typescript": "^3.5.3"
+  }
+}

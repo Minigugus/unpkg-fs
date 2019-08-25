@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2018",
+    "module": "esnext",
+    "strict": true,
+    "removeComments": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
