@@ -1,17 +1,23 @@
 import typescript from 'rollup-plugin-typescript2';
 import resolve from 'rollup-plugin-node-resolve';
 
-export default {
-  input: './index.ts',
+const fs = (name, external = []) => ({
+  input: `./${name}.ts`,
   output: {
     format: 'iife',
-    name: 'UnpkgFS',
-    file: 'dist/index.js'
+    name: `${name}`,
+    file: `dist/${name}.js`
   },
   plugins: [
     typescript(),
-    commonjs(),
     resolve()
   ],
-  external: [ ]
-}
+  external
+});
+
+export default [
+  fs('UnpkgFS'),
+  fs('GithubFS'),
+  fs('AbstractFS'),
+  fs('VirtualNode')
+]
